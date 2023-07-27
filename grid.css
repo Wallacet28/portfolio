@@ -1,0 +1,406 @@
+/* Reset some default styles for better consistency */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto Slab', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+.cabecalho {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho__logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.cabecalho__logo img {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.menu__lista {
+  list-style: none;
+  display: flex;
+}
+
+.menu__item {
+  margin-right: 1rem;
+}
+
+.menu__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.menu__link__email {
+  /* Adicione os estilos desejados para o link de e-mail aqui */
+  color: #fff; /* Cor do texto */
+  text-decoration: none; /* Remover sublinhado */
+  font-size: 1rem; /* Tamanho da fonte */
+  margin-left: 1rem; /* Adicionar espaço entre esse link e os outros */
+}
+
+/* Main */
+.conteudo__principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f1f1f1;
+}
+
+.conteudo__principal--titulo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.conteudo__principal--descricao {
+  font-size: 1rem;
+}
+
+.conteudo__imagem img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* About Me */
+.conteudo__sobre {
+  padding: 2rem;
+}
+
+.conteudo__sobre--titulo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.conteudo__sobre--descricao {
+  font-size: 1rem;
+}
+
+/* Skills/Hobbies */
+.container__skills,
+.container__hobbies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.container__skills--titulo,
+.container__hobbies--titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.conteudo__hobbies--caixa,
+.conteudo__skills--caixa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 1rem;
+}
+
+.skills__img,
+.hobbies__img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+
+/* Formação */
+.container__formacao {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.container__formacao--titulo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.conteudo__formacao--descricao {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.conteudo__formacao--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.conteudo__formacao--curso {
+  font-size: 1.2rem;
+}
+
+.conteudo__formacao--imagem {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.conteudo__formacao--imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.conteudo__formacao--curso {
+  font-size: 1.2rem;
+}
+
+/* Experiência */
+#experiencia {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.container__experiencia--titulo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.container__projeto {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  padding: 1rem;
+}
+
+.projeto__imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Defina a altura da imagem como desejar */
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.projeto__imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projeto__conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container__projeto--titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.container__projeto--descricao {
+  font-size: 1rem;
+}
+
+.container__projeto--botoes {
+  display: flex;
+  gap: 1rem;
+}
+
+.botao__repositorio a,
+.botao__demo a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  
+  text-decoration: none; 
+}
+
+.botao__repositorio a,
+.botao__demo a {
+  color: #fff; /* Define a cor do link dentro do botão */
+  text-decoration: none; /* Remover sublinhado padrão */
+}
+.botao__repositorio a:hover,
+.botao__demo a:hover {
+  color: #fff;
+  text-decoration: underline; /* Adicionando sublinhado quando o mouse passar */
+}
+/* Removendo sublinhado dos links dentro dos botões */
+.botao__repositorio a,
+.botao__demo a {
+  text-decoration: none;
+}
+
+.botao__demo a {
+  background-color: #4caf50;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  #experiencia {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Adicione outras media queries conforme necessário para outros tamanhos de tela */
+
+
+/* Contato */
+.container__contato {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.container__contato--titulo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.container__contato--texto {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#formulario {
+  display: grid;
+  gap: 1rem;
+}
+
+.formulario__campos label {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.formulario__campos input,
+.formulario__campos textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.botao__enviar {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+.rodape {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.texto {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+
+  .container__skills,
+  .container__hobbies,
+  .container__formacao,
+  .container__experiencia,
+  .container__contato {
+    grid-template-columns: 1fr;
+  }
+  .container__contato {
+    grid-template-columns: 1fr; /* Ajustar para uma única coluna */
+    display: flex;
+    flex-direction: column; /* Ajustar para uma única coluna */
+    align-items: center; /* Centralizar o conteúdo verticalmente */
+  }
+  }
+
+
+  .container__contato--imagem {
+    display: none;
+  }
+
+
+  .menu__lista {
+    display: flex;
+    flex-direction: column; /* Alinhar os itens verticalmente */
+  }
+
+  .menu__item {
+    margin-bottom: 0.5rem; /* Adicionar espaço entre os itens */
+  }
+
+
+
+@media screen and (min-width: 481px) and (max-width: 900px) {
+
+  .container__experiencia,
+  .container__contato {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media screen and (min-width: 901px) {
+
+  .container__experiencia,
+  .container__contato {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .container__contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  .container__contato--imagem {
+    display: block; /* Mostrar a imagem novamente */
+  }
+
+  .container__contato--conteudo {
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteudo__formacao--imagem {
+    width: 150px;
+    height: 150px;
+  }
+}
